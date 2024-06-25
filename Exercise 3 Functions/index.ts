@@ -10,3 +10,17 @@ function addNumbers(a: number, b: number): number {
   }
   let result = getFixedNumber();
 console.log(result); 
+
+//Write a function that takes a string and an optional boolean parameter. If the boolean 
+//is true, return the string in uppercase; otherwise, return it in lowercase
+function formatString(str: string, useUppercase?: boolean): string {
+    return useUppercase === true ? str.toUpperCase() : str.toLowerCase();
+  }
+  let result1 = formatString("Hello");
+console.log(result1); // Output: hello
+
+let result2 = formatString("World", true);
+console.log(result2); // Output: WORLD
+
+let result3 = formatString("TypeScript", false);
+console.log(result3); // Output: typescript
